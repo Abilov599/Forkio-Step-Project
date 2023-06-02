@@ -10,6 +10,9 @@
   &_relative {
     position: relative;
   }
+  @include large-desktopK {
+    padding: 0 90px;
+  }
 }
 @include tabletK {
   .container {

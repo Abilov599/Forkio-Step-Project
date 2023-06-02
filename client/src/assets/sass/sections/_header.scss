@@ -182,10 +182,10 @@
     &__menu {
       display: flex;
       width: auto;
+      gap: 48px;
       margin-left: calcFluidSize(115, 320, 993, 1200);
     }
     &__menu-item {
-      padding-right: 48px;
       &:hover {
         color: $primary-color;
       }
@@ -199,7 +199,8 @@
 @include large-desktopK {
   .header {
     &__menu {
-      margin-left: 320px;
+      margin-left: 165px;
+      margin-right: 48px;
     }
   }
 }
