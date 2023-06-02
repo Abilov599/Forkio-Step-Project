@@ -67,7 +67,7 @@
 @include small-mobileK {
   .feedback {
     width: 320px;
-    padding-bottom: 71px;
+    padding-bottom: 14px;
     &__title {
       @include fontsize-padding(36px, 61px 17px 0);
     }
@@ -87,7 +87,7 @@
 
 @media (min-width: #{$tablet-width}) {
   .feedback {
-    padding-bottom: 80px;
+    padding-bottom: 30px;
     &__title {
       @include fontsize-padding(42px, calcFluidSize(61, 98, 320, 1200) 0 0);
     }
