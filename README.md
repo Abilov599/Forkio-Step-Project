@@ -21,3 +21,7 @@ statically).
 ## Used technologies
 
 HTML, CSS, SCSS, JS, Gulp.
+
+## View deployment
+
+### https://abilov599.github.io/Forkio-Step-Project/
