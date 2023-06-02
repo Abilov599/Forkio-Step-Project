@@ -39,11 +39,11 @@
   &__subtitle {
     font-family: "Lato", sans-serif;
     color: rgba(162, 145, 165, 0.8);
+    line-height: 21px;
     font-size: 14px;
     text-align: center;
+    padding: 0 24px;
     margin: calcFluidSize(62, 119, 481, 1200) auto 0;
-    display: none;
-    width: calcFluidSize(665, 850, 769, 1200);
   }
   &__line {
     margin: 0 auto;
@@ -79,7 +79,7 @@
       width: 290px;
     }
     &__line {
-      margin-top: 44px;
+      margin-top: 22px;
       width: 280px;
     }
   }
