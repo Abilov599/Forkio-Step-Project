@@ -49,4 +49,4 @@ npm run build
 
 HTML, CSS, SCSS, JS, Gulp.
 
-## <a href="https://abilov599.github.io/Forkio-Step-Project/">🚀 View deployment</a>
+## <a target = "_blank" href="https://abilov599.github.io/Forkio-Step-Project/">🚀 View deployment</a>
