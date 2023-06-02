@@ -1,149 +1,171 @@
 .home {
-    background-image: url('../images/fork-mobile.png');
-    background-size: cover;
-    background-position: center 80%;
-    background-repeat: no-repeat;
-    font-family: 'Montserrat', sans-serif;
-    &__title {
-        @include fontsize-padding(calcFluidSize(48,82,320,1200), calcFluidSize(43,101,320,480) 0 calcFluidSize(20,35,320,480));
-        @include text($primary-color, 700, capitalize, center)
-    }
-    &__slogan {
-        font-family: 'Lato', sans-serif;
-        line-height: 25px;
-        padding: 0 calcFluidSize(20,40,320,480) 0; 
-        font-size: calcFluidSize(18,30,320,1200);
-        @include fontsize-padding(calcFluidSize(18,30,320,1200), 0 calcFluidSize(20,40,320,480) 0);
-        @include text($secondary-color, 400, none, center);
-    }
-    &__install-info {
-        @include fontsize-padding(calcFluidSize(14,16,320,480), calcFluidSize(20,23,320,480) 0 calcFluidSize(424,454,320,480));
-        @include text(#848e97, 400, uppercase, center);
-    }
+  background-image: url("../images/fork-mobile.png");
+  background-size: cover;
+  background-position: center 80%;
+  background-repeat: no-repeat;
+  font-family: "Montserrat", sans-serif;
+  &__title {
+    @include fontsize-padding(
+      calcFluidSize(48, 82, 320, 1200),
+      calcFluidSize(43, 101, 320, 480) 0 calcFluidSize(20, 35, 320, 480)
+    );
+    @include text($primary-color, 700, capitalize, center);
+  }
+  &__slogan {
+    font-family: "Lato", sans-serif;
+    line-height: 25px;
+    padding: 0 calcFluidSize(20, 40, 320, 480) 0;
+    font-size: calcFluidSize(18, 30, 320, 1200);
+    @include fontsize-padding(
+      calcFluidSize(18, 30, 320, 1200),
+      0 calcFluidSize(20, 40, 320, 480) 0
+    );
+    @include text($secondary-color, 400, none, center);
+  }
+  &__install-info {
+    @include fontsize-padding(
+      calcFluidSize(14, 16, 320, 480),
+      calcFluidSize(20, 23, 320, 480) 0 calcFluidSize(424, 454, 320, 480)
+    );
+    @include text(#848e97, 400, uppercase, center);
+  }
 }
 
 .btn-container {
-    &_absolute {
-        @include position(absolute, calc(100% - ((100vw - 320px)/( 480 - 320) * (33.5 - 24) + 24px)), calcFluidSize(16,45.5,320,480))
-    }
-    &__text {
-        @include fontsize-padding(14px, 13px 0 0 0);
-        @include text(#848e97, 400, capitalize, center)
-    }
+  &_absolute {
+    @include position(
+      absolute,
+      calc(100% - ((100vw - 320px) / (480 - 320) * (33.5 - 24) + 24px)),
+      calcFluidSize(16, 45.5, 320, 480)
+    );
+  }
+  &__text {
+    @include fontsize-padding(14px, 13px 0 0 0);
+    @include text(#848e97, 400, capitalize, center);
+  }
 }
 
 .button {
-    &_type_download {
-        display: block;
-        border-radius: 30px;
-        @include fontsize-padding(calcFluidSize(18,21,320,480), calcFluidSize(15,23,320,480) calcFluidSize(32,64,320,480));
-        @include fontsize-padding (calcFluidSize(18,21,320,480), calcFluidSize(15,23,320,480) calcFluidSize(32,64,320,480));
-        
-    }
+  &_type_download {
+    display: block;
+    border-radius: 30px;
+    @include fontsize-padding(
+      calcFluidSize(18, 21, 320, 480),
+      calcFluidSize(15, 23, 320, 480) calcFluidSize(32, 64, 320, 480)
+    );
+    @include fontsize-padding(
+      calcFluidSize(18, 21, 320, 480),
+      calcFluidSize(15, 23, 320, 480) calcFluidSize(32, 64, 320, 480)
+    );
+  }
 }
 
 @include mobilesK {
-    .home {
-        background-image: url('../images/fork-large-mobile.png');
-        &__slogan {
-            text-transform: capitalize;
-        }
+  .home {
+    background-image: url("../images/fork-large-mobile.png");
+    &__slogan {
+      text-transform: capitalize;
     }
+  }
 }
 
 @include small-mobileK {
-    .home {
-        width: 320px;
-        &__title { 
-            @include fontsize-padding (48px, 43px 0 20px);
-        }
-        &__slogan {
-            @include fontsize-padding (18px, 0 20px);
-        }
-        &__install-info {
-            @include fontsize-padding (14px, 20px 0 424px);
-        }
+  .home {
+    width: 320px;
+    &__title {
+      @include fontsize-padding(48px, 43px 0 20px);
     }
-
-    .button {
-        &_type_download {
-            @include fontsize-padding (18px, 15px 32px);
-        }
+    &__slogan {
+      @include fontsize-padding(18px, 0 20px);
     }
-
-    .btn-container {
-        @include position (absolute, calc(100% - 24px), 18px)
+    &__install-info {
+      @include fontsize-padding(14px, 20px 0 424px);
     }
+  }
 
+  .button {
+    &_type_download {
+      @include fontsize-padding(18px, 15px 32px);
+    }
+  }
 
+  .btn-container {
+    @include position(absolute, calc(100% - 24px), 18px);
+  }
 }
 
 @media (min-width: #{$tablet-width}) {
-    .btn-container {
-        &_absolute {
-            @include position(absolute, calc(100% - 33.5px), calc((100% - 389px)/2))
-        }
-        &__text {
-            padding-top: 19px;
-        }
+  .btn-container {
+    &_absolute {
+      @include position(
+        absolute,
+        calc(100% - 33.5px),
+        calc((100% - 389px) / 2)
+      );
     }
+    &__text {
+      padding-top: 19px;
+    }
+  }
 
-    .button {
-        &_type_download {
-            @include fontsize-padding (21px, 23px 64px);
-            border: 1px solid $secondary-color;
-        }
+  .button {
+    &_type_download {
+      @include fontsize-padding(21px, 23px 64px);
+      border: 1px solid $secondary-color;
     }
+  }
 }
 
 @include tabletK {
-    .home {
-        background-image: url('../images/fork-desktop.png');
-        &__title {
-            padding-top: 50px;
-        }
-        &__slogan {
-            padding: 0;
-        }
+  .home {
+    background-image: url("../images/fork-desktop.png");
+    &__title {
+      padding-top: 50px;
     }
+    &__slogan {
+      padding: 0;
+    }
+  }
 }
 
 @include desktopK {
-    .home {
-        background-image: url('../images/fork-desktop.png');
-        &__title {
-            padding-top: calcFluidSize(50,60,993,1200);
-        }
+  .home {
+    background-image: url("../images/fork-desktop.png");
+    &__title {
+      padding-top: calcFluidSize(50, 60, 993, 1200);
     }
+  }
 }
 
 @include tablet-desktopK {
-    .home {
-        &__title {
-            padding-bottom: calcFluidSize(35,18,481,1200);
-        }
-        &__install-info {
-            @include fontsize-padding (calcFluidSize(14,16,481,1200), calcFluidSize(23,18,481,1200) 0 487px);
-        }
+  .home {
+    &__title {
+      padding-bottom: calcFluidSize(35, 18, 481, 1200);
     }
+    &__install-info {
+      @include fontsize-padding(
+        calcFluidSize(14, 16, 481, 1200),
+        calcFluidSize(23, 18, 481, 1200) 0 487px
+      );
+    }
+  }
 }
 
 @include large-desktopK {
-    .home {
-        background-image: url('../images/fork-large-desktop.png');
-        &__container {
-            width: calc(#{$large-desktop-width - 1px});
-            margin: 0 auto;
-        }
-        &__title {
-            @include fontsize-padding (82px, 60px 0 18px);
-        }
-        &__install-info {
-            @include fontsize-padding (16px, 18px 0 454px);
-        }
-        &__slogan {
-            font-size: 30px;
-        }
+  .home {
+    background-image: url("../images/fork-large-desktop.png");
+    &__container {
+      width: calc(#{$large-desktop-width - 1px});
+      margin: 0 auto;
     }
-}       
-
+    &__title {
+      @include fontsize-padding(82px, 60px 0 18px);
+    }
+    &__install-info {
+      @include fontsize-padding(16px, 18px 0 454px);
+    }
+    &__slogan {
+      font-size: 30px;
+    }
+  }
+}

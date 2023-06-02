@@ -1,160 +1,166 @@
 .feedback {
-    background-color: rgb(73,59,78);
-    background-blend-mode: initial;
-    background-image: url(../images/peopletalking-mobile.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    padding-bottom: calcFluidSize(71,61,320,480);
-    &__title {
-    font-family: 'Montserrat', sans-serif;
-    @include text ($primary-color, 700, capitalize, center);
-    @include fontsize-padding (calcFluidSize(36,42,320,480), calcFluidSize(61,98,320,1200) calcFluidSize(17,22,320,480) 0);
+  background-color: rgb(73, 59, 78);
+  background-blend-mode: initial;
+  background-image: url(../images/peopletalking-mobile.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: calcFluidSize(71, 61, 320, 480);
+  &__title {
+    font-family: "Montserrat", sans-serif;
+    @include text($primary-color, 700, capitalize, center);
+    @include fontsize-padding(
+      calcFluidSize(36, 42, 320, 480),
+      calcFluidSize(61, 98, 320, 1200) calcFluidSize(17, 22, 320, 480) 0
+    );
+  }
+  &__companies-container {
+    margin-top: calcFluidSize(49, 95, 320, 768);
+    justify-items: center;
+    @include grid(1fr, initial, calcFluidSize(37, 57, 320, 480));
+  }
+  &__item {
+    max-width: 330px;
+  }
+  &__item-img {
+    height: 64px;
+    @include flex(initial, center, center);
+    &_direction_right {
+      display: block;
+      margin-left: 9px;
     }
-    &__companies-container {
-        margin-top: calcFluidSize(49,95,320,768);
-        justify-items: center;
-        @include grid (1fr, initial, calcFluidSize(37,57,320,480));
-    }
-    &__item {
-        max-width: 330px;
-    }
-    &__item-img {
-        height: 64px;
-        @include flex(initial, center, center);
-        &_direction_right {
-            display: block;
-            margin-left: 9px;
-        }
-    }
-    &__item-text {
-        font-family: 'Lato', sans-serif;
-        font-style: italic;
-        line-height: 24px;
-        @include text ($primary-color, 600, none, center);
-        @include fontsize-padding (16px, 26px 0 0 0);
-    }
-    &__subtitle {
-        font-family: 'Lato', sans-serif;
-        color:  rgba(162, 145, 165, 0.8);
-        font-size: 14px;
-        text-align: center;
-        margin: calcFluidSize(62,119,481,1200) auto 0;
-        display: none;
-        width: calcFluidSize(665,850,769,1200);
-    }
-    &__line {
-        margin: 0 auto;
-        height: 2px;
-        background-color: rgba(199, 199, 199, 0.2);
-        margin-top: calcFluidSize(44,81,320,480);
-        width: calcFluidSize(280,350,320,480);
-    }
+  }
+  &__item-text {
+    font-family: "Lato", sans-serif;
+    font-style: italic;
+    line-height: 24px;
+    @include text($primary-color, 600, none, center);
+    @include fontsize-padding(16px, 26px 0 0 0);
+  }
+  &__subtitle {
+    font-family: "Lato", sans-serif;
+    color: rgba(162, 145, 165, 0.8);
+    font-size: 14px;
+    text-align: center;
+    margin: calcFluidSize(62, 119, 481, 1200) auto 0;
+    display: none;
+    width: calcFluidSize(665, 850, 769, 1200);
+  }
+  &__line {
+    margin: 0 auto;
+    height: 2px;
+    background-color: rgba(199, 199, 199, 0.2);
+    margin-top: calcFluidSize(44, 81, 320, 480);
+    width: calcFluidSize(280, 350, 320, 480);
+  }
 }
 
 @include mobilesK {
-    .feedback {
-        background-image: url(../images/peopletalking-mobiles.png);
-        background-position-y: 14px;
-        &__title {
-            line-height: calcFluidSize(45,55,320,480);
-        }
+  .feedback {
+    background-image: url(../images/peopletalking-mobiles.png);
+    background-position-y: 14px;
+    &__title {
+      line-height: calcFluidSize(45, 55, 320, 480);
     }
+  }
 }
 
 @include small-mobileK {
-    .feedback {
-        width: 320px;
-        padding-bottom: 71px;
-        &__title {
-            @include fontsize-padding (36px, 61px 17px 0);
-        }
-        &__companies-container {
-            margin-top: 49px;
-            grid-row-gap: 37px;
-        }
-        &__item {
-            width: 290px;
-        }
-        &__line {
-            margin-top: 44px;
-            width: 280px;
-        }
+  .feedback {
+    width: 320px;
+    padding-bottom: 71px;
+    &__title {
+      @include fontsize-padding(36px, 61px 17px 0);
     }
+    &__companies-container {
+      margin-top: 49px;
+      grid-row-gap: 37px;
+    }
+    &__item {
+      width: 290px;
+    }
+    &__line {
+      margin-top: 44px;
+      width: 280px;
+    }
+  }
 }
 
 @media (min-width: #{$tablet-width}) {
-    .feedback {
-        padding-bottom: 80px;
-        &__title {
-            @include fontsize-padding (42px, calcFluidSize(61,98,320,1200) 0 0);
-        }
-        &__line {
-            height: 2px;
-            background-color: #645765;
-            margin-top: 17px;
-            width: calcFluidSize(700,800,769,1200);
-        }
-        &__companies-container {
-            margin-top: 95px;
-        }
+  .feedback {
+    padding-bottom: 80px;
+    &__title {
+      @include fontsize-padding(42px, calcFluidSize(61, 98, 320, 1200) 0 0);
     }
+    &__line {
+      height: 2px;
+      background-color: #645765;
+      margin-top: 17px;
+      width: calcFluidSize(700, 800, 769, 1200);
+    }
+    &__companies-container {
+      margin-top: 95px;
+    }
+  }
 }
 
 @include tabletK {
-    .feedback {
-        background-image: url(../images/peopletalking-desktop.png);
-        &__subtitle {
-            display: block;
-        }
-        &__companies-container {
-            @include grid ((1fr 1fr), calcFluidSize(25,100,481,992), 57px);
-        }
+  .feedback {
+    background-image: url(../images/peopletalking-desktop.png);
+    &__subtitle {
+      display: block;
     }
+    &__companies-container {
+      @include grid((1fr 1fr), calcFluidSize(25, 100, 481, 992), 57px);
+    }
+  }
 }
 
-
-@media (min-width: #{$tablet-width}) and (max-width: #{$mid-tablet-width}){
-    .feedback {
-        background-image: url(../images/peopletalking-tablet.png);
-        &__subtitle {
-            width: calcFluidSize(450,665,481,768);
-        }
-        &__line {
-            width: calcFluidSize(450,700,481,768);
-        }
+@media (min-width: #{$tablet-width}) and (max-width: #{$mid-tablet-width}) {
+  .feedback {
+    background-image: url(../images/peopletalking-tablet.png);
+    &__subtitle {
+      width: calcFluidSize(450, 665, 481, 768);
     }
+    &__line {
+      width: calcFluidSize(450, 700, 481, 768);
+    }
+  }
 }
 
 @include desktopsK {
-    .feedback {
-        background-image: url(../images/peopletalking-desktop.png);
-        &__title {
-            font-size: calcFluidSize(42,48,993,1200);
-        }
-        &__subtitle {
-            display: block;
-            width: calcFluidSize(665,850,993,1200);
-        }
-        &__companies-container {
-            @include grid ((1fr 1fr 1fr), calcFluidSize(20,100,993,1200), calcFluidSize(57,85,993,1200));
-        }
+  .feedback {
+    background-image: url(../images/peopletalking-desktop.png);
+    &__title {
+      font-size: calcFluidSize(42, 48, 993, 1200);
     }
+    &__subtitle {
+      display: block;
+      width: calcFluidSize(665, 850, 993, 1200);
+    }
+    &__companies-container {
+      @include grid(
+        (1fr 1fr 1fr),
+        calcFluidSize(20, 100, 993, 1200),
+        calcFluidSize(57, 85, 993, 1200)
+      );
+    }
+  }
 }
 
 @include large-desktopK {
-    .feedback {
-        &__title {
-            font-size: 48px;
-        }
-        &__subtitle {
-            width: 850px;
-        }
-        &__line {
-            width: 800px;
-        }
-        &__companies-container {
-            grid-column-gap: 100px;
-            grid-row-gap: 85px;
-        }
+  .feedback {
+    &__title {
+      font-size: 48px;
     }
+    &__subtitle {
+      width: 850px;
+    }
+    &__line {
+      width: 800px;
+    }
+    &__companies-container {
+      grid-column-gap: 100px;
+      grid-row-gap: 85px;
+    }
+  }
 }

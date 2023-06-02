@@ -1,26 +1,26 @@
 .containerK {
-    padding: 0 10px 0;
-    box-sizing: border-box;
-    &_flex {
-            height: 100%;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-    }
-    &_relative {
-        position: relative;
-    }
+  padding: 0 10px 0;
+  box-sizing: border-box;
+  &_flex {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &_relative {
+    position: relative;
+  }
 }
 @include tabletK {
-    .container {
-        &_flex {
-            align-items: flex-start;
-        }
+  .container {
+    &_flex {
+      align-items: flex-start;
     }
+  }
 }
 @include large-desktopK {
-    .container {
-        width: #{$large-desktop-width - 1px};
-        margin: 0 auto;
-    }
+  .container {
+    width: #{$large-desktop-width - 1px};
+    margin: 0 auto;
+  }
 }
