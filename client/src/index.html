@@ -5,14 +5,142 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/css/index.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:400,700"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700"
+      rel="stylesheet"
+    />
     <title>Forkio</title>
   </head>
   <body>
-    <header>
-      <div class="container"></div>
+    <header class="header">
+      <div class="containerK containerK_flex">
+        <a href="#" class="header__logo">
+          <div class="header__logo-img"></div>
+          <div class="header__logo-text">forkio</div>
+        </a>
+        <ul class="header__menu">
+          <li class="header__menu-item header__menu-item_disabled">
+            <a href="#" class="header__menu-item-link">home</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-item-link">overview</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-item-link">about fork</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-item-link">buying options</a>
+          </li>
+          <li class="header__menu-item">
+            <a href="#" class="header__menu-item-link">support</a>
+          </li>
+        </ul>
+        <div class="button button_type_buy button_color_purple">buy now</div>
+        <div class="header__burger">
+          <div class="header__burger-line header__burger-line_small"></div>
+          <div class="header__burger-line"></div>
+          <div class="header__burger-line header__burger-line_last"></div>
+        </div>
+      </div>
     </header>
     <main>
-      <div class="container"></div>
+      <section class="home">
+        <div class="containerK containerK_relative">
+          <h1 class="home__title">fork app</h1>
+          <p class="home__slogan">
+            A real gamechanger in the world of web-development
+          </p>
+          <p class="home__install-info">v. 2.8 for mac and windows</p>
+          <div class="btn-container btn-container_absolute">
+            <a class="button button_type_download button_color_purple"
+              >download for free now</a
+            >
+            <p class="btn-container__text">unlimited 30-days trial period</p>
+          </div>
+        </div>
+      </section>
+      <section></section>
+      <section></section>
+      <section class="feedback">
+        <div class="containerK">
+          <h2 class="feedback__title">people are talking about fork</h2>
+          <ul class="feedback__companies-container">
+            <li class="feedback__item">
+              <div class="feedback__item-img">
+                <img src="./assets/images/smash-magazine.png" alt="smash-magazine" />
+              </div>
+              <p class="feedback__item-text">
+                Sed vestibulum scelerisque urna, eu finibus leo facilisis sit
+                amet. Proin id dignissim magna. Sed varius urna et pulvinar
+                venenatis.
+              </p>
+            </li>
+            <li class="feedback__item">
+              <div class="feedback__item-img">
+                <img src="./assets/images/codrops.png" alt="codrops" />
+              </div>
+              <p class="feedback__item-text">
+                Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum,
+                rhoncus molestie neque ac, mollis eleifend nibh.
+              </p>
+            </li>
+            <li class="feedback__item">
+              <div class="feedback__item-img">
+                <img src="./assets/images/W.png" alt="W" />
+              </div>
+              <p class="feedback__item-text">
+                In efficitur in velit et tempus. Duis nec odio dapibus, suscipit
+                erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac
+                vehicula.
+              </p>
+            </li>
+            <li class="feedback__item">
+              <div class="feedback__item-img">
+                <img src="./assets/images/pixel-buddha-logo.png" alt="pixel-budha" />
+                <img
+                  src="./assets/images/pixel-budha.png"
+                  alt=""
+                  class="feedback__item-img_direction_right"
+                />
+              </div>
+              <p class="feedback__item-text">
+                Sed vestibulum scelerisque urna, eu finibus leo facilisis sit
+                amet. Proin id dignissim magna. Sed varius urna et pulvinar
+                venenatis.
+              </p>
+            </li>
+            <li class="feedback__item">
+              <div class="feedback__item-img">
+                <img src="./assets/images/creative-blog.png" alt="creative-blog" />
+              </div>
+              <p class="feedback__item-text">
+                Praesent ut eros tristique, malesuada lectus vel, lobortis
+                massa. Nulla faucibus lorem id arcu consequat faucibus.
+              </p>
+            </li>
+            <li class="feedback__item">
+              <div class="feedback__item-img">
+                <img src="./assets/images/tnw.png" alt="tnw" />
+              </div>
+              <p class="feedback__item-text">
+                Fusce pharetra erat id odio blandit, nec pharetra eros
+                venenatis. Pellentesque porttitor cursus massa et vestibulum.
+              </p>
+            </li>
+          </ul>
+          <p class="feedback__subtitle">
+            Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris,
+            facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu
+            libero tincidunt consequat nec elementum orci. Cum sociis natoque
+            penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+          </p>
+          <div class="feedback__line"></div>
+        </div>
+      </section>
     </main>
     <script src="./assets/js/index.js"></script>
   </body>
