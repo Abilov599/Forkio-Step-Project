@@ -9,7 +9,7 @@
   },
   "scripts": {
     "build": "gulp",
-    "serve": "gulp serve",
+    "dev": "gulp serve",
     "concat-html": "gulp concat-html",
     "image-min": "gulp image-min",
     "minify-js": "gulp minify-js"
