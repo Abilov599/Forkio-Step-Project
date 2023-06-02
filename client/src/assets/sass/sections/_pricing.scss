@@ -1,0 +1,153 @@
+.pricing-section {
+  padding: 83px 0 97px;
+  background-image: url("../images/pricing-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  @include tablet {
+    padding: 0px 0 94px;
+  }
+  @include mobile {
+    padding: 0 0 14px;
+  }
+  .containerK {
+    .pricing__heading {
+      color: #fff;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 48px;
+      line-height: 50px;
+      text-align: center;
+      margin-bottom: 61px;
+      @include tablet {
+        font-size: 28px;
+        line-height: 42px;
+        margin-bottom: 39px;
+      }
+      @include mobile {
+        font-size: 42px;
+        line-height: 44px;
+        margin-bottom: 32px;
+      }
+    }
+    .pricing__box {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 15px;
+      @include tablet {
+        gap: 30px 25px;
+      }
+      @include mobile {
+        gap: 18px;
+      }
+      .card {
+        max-width: 257px;
+        width: 100%;
+        &__header {
+          height: 100%;
+          background-color: rgba(255, 255, 255, 0.06);
+          &__text {
+            padding: 36px 0;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 24px;
+            line-height: 24px;
+            color: #fff;
+            text-align: center;
+            text-transform: uppercase;
+          }
+        }
+        &__body {
+          text-align: center;
+          padding: 30px 0px 36px;
+          background-color: rgba(255, 255, 255, 0.11);
+          &__price {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 90px;
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #ffffff;
+          }
+          &__payment-per-month {
+            margin-top: 20px;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 16px;
+            text-align: center;
+            text-transform: uppercase;
+
+            color: #ffffff;
+          }
+          &__line {
+            margin: 38px auto 36px;
+            width: 60px;
+            height: 5px;
+            background-color: #8d81ac;
+          }
+          &__features {
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 18px;
+            text-align: center;
+
+            color: #ffffff;
+          }
+          &__button {
+            cursor: pointer;
+            font-family: "Montserrat";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 15px;
+            line-height: 15px;
+            text-transform: uppercase;
+            color: #ffffff;
+            background-color: rgba(255, 255, 255, 0.15);
+            border-radius: 30px;
+            border: none;
+            margin-top: 36px;
+            padding: 15px 37.5px;
+            text-align: center;
+          }
+        }
+        &--highlighted {
+          max-width: 299px;
+          background-color: rgba(70, 48, 72, 0.87);
+          .card__header {
+            background-color: rgba(0, 0, 0, 0.11);
+            &__text {
+              padding: 43px 0;
+            }
+          }
+          .card__body {
+            padding: 14px 0 47px;
+            &__price {
+              font-size: 82px;
+            }
+            &__payment-per-month {
+              margin-top: 16px;
+            }
+            &__features {
+              margin-top: 40px;
+            }
+            &__button {
+              margin-top: 83px;
+              font-size: 16px;
+              line-height: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
