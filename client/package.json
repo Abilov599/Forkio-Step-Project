@@ -1,0 +1,31 @@
+{
+  "name": "step-project-1-forkio",
+  "version": "1.0.0",
+  "description": "Jeyhun Abilov, Kamal Ahmadov, FS-1",
+  "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Abilov599/Forkio-Step-Project"
+  },
+  "scripts": {
+    "build": "gulp",
+    "serve": "gulp serve",
+    "concat-html": "gulp concat-html",
+    "image-min": "gulp image-min",
+    "minify-js": "gulp minify-js"
+  },
+  "author": "Jeyhun Abilov, Kamal Ahmadov",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.29.3",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-uglify-es": "^3.0.0",
+    "sass": "^1.62.1"
+  }
+}
