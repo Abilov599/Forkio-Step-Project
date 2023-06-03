@@ -1,0 +1,66 @@
+.revo-editor {
+  padding: 129px 0 70px;
+  .containerK {
+    h1 {
+      text-align: center;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 54px;
+      line-height: 54px;
+      text-transform: uppercase;
+      color: #635c73;
+      @include tablet {
+        font-size: 34px;
+        line-height: 34px;
+      }
+      @include mobile {
+        font-size: 26px;
+        line-height: 28px;
+      }
+    }
+    p {
+      max-width: 861px;
+      margin: 35px auto 30px;
+      font-family: "Lato";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 21px;
+      line-height: 32px;
+      text-align: center;
+      color: #323232;
+      @include mobile {
+        font-size: 14px;
+        line-height: 20px;
+      }
+    }
+    .list {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 13px;
+      margin: 0 auto;
+      &__items {
+        &__btn {
+          font-weight: bold;
+          font-family: Lato;
+          border-radius: 3px;
+          padding: 7px 0;
+          background-color: #f1f1f1;
+          border: 1px solid #cacaca;
+          span {
+            margin-left: 6px;
+            padding: 7px 6px;
+            border-top-right-radius: 3px;
+            border-bottom-right-radius: 3px;
+            border-left: 1px solid #cacaca;
+            background-color: #fff;
+          }
+          &__icon {
+            padding: 0 7px;
+          }
+        }
+      }
+    }
+  }
+}
