@@ -11,9 +11,10 @@
     position: relative;
   }
   @include large-desktopK {
-    padding: 0 90px;
+    padding: 0 40px;
   }
 }
+
 @include tabletK {
   .container {
     &_flex {
@@ -24,6 +25,5 @@
 @include large-desktopK {
   .container {
     width: #{$large-desktop-width - 1px};
-    margin: 0 auto;
   }
 }
