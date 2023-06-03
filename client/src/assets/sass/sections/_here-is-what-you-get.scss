@@ -1,25 +1,44 @@
 .here-is-what-you-get {
   background-color: #f4f4f4;
   padding: 98px 0 45px;
+  overflow: hidden;
   .containerK {
     max-width: 1520px;
     padding-right: 0;
     padding-left: 90px;
     margin: 0 auto;
+    @include tablet {
+      padding-left: 30px;
+    }
+    @include mobile {
+      padding: 0 10px;
+    }
     .here-is {
       display: none;
       font-family: "Montserrat";
       font-style: normal;
       font-weight: 700;
+      color: #8d81ac;
       font-size: 42px;
       line-height: 44px;
       text-align: center;
+      @include tablet {
+        font-size: 48px;
+        line-height: 50px;
+        display: block;
+        text-align: center;
+        margin-bottom: 52px;
+      }
+      @include mobile {
+        font-size: 32px;
+        line-height: 38px;
+        margin-bottom: 36px;
+      }
     }
     .box {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      gap: 50px;
       &__left {
         .visual-list {
           display: flex;
@@ -28,13 +47,21 @@
             display: flex;
             justify-content: center;
             margin-bottom: 35px;
+            @include tablet {
+              margin-bottom: 62px;
+            }
+            @include mobile {
+              flex-direction: column;
+              gap: 20px;
+            }
             .img-holder {
               margin: auto;
-              img {
-              }
             }
             .text-holder {
               margin-left: 23px;
+              @include mobile {
+                margin: 0;
+              }
               h3 {
                 font-family: "Montserrat";
                 font-style: normal;
@@ -42,6 +69,9 @@
                 font-size: 16px;
                 line-height: 21px;
                 color: #323232;
+                @include mobile {
+                  text-align: center;
+                }
               }
               p {
                 margin-top: 16px;
@@ -52,12 +82,22 @@
                 font-size: 14px;
                 line-height: 21px;
                 color: #848e97;
+                @include tablet {
+                  max-width: 588px;
+                }
+                @include mobile {
+                  text-align: center;
+                }
               }
             }
           }
         }
       }
       &__right {
+        @include tablet {
+          display: flex;
+          margin-left: auto;
+        }
         h1 {
           margin-left: 20px;
           margin-bottom: 19px;
@@ -67,6 +107,9 @@
           font-size: 48px;
           line-height: 50px;
           color: #8d81ac;
+          @include tablet {
+            display: none;
+          }
         }
       }
     }
