@@ -7,7 +7,8 @@ const browserSync = require("browser-sync").create();
 const minify = require("gulp-minify");
 const cleanCSS = require("gulp-clean-css");
 const uglify = require("gulp-uglify-es").default;
-const autoprefixer = require("gulp-autoprefixer");
+const autoprefixer = require("autoprefixer");
+const postcss = require("gulp-postcss");
 const imagemin = require("gulp-imagemin");
 
 // FUNCTIONS
@@ -25,8 +26,8 @@ function style() {
     .src("./src/assets/sass/**/*.scss")
     .pipe(sass({ outputStyle: "expanded" }).on("error", sass.logError))
     .on("error", sass.logError)
-    .pipe(autoprefixer({ cascade: false }))
     .pipe(cleanCSS({ compatibility: "ie8" }))
+    .pipe(postcss([autoprefixer()]))
     .pipe(gulp.dest("../assets/css/"))
     .pipe(browserSync.stream());
 }
